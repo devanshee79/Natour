@@ -4,7 +4,9 @@ html
         block head
             meta(charset='UTF-8') 
             script(src=`https://apis.mappls.com/advancedmaps/api/${process.env.MAP_API_KEY}/map_sdk?layer=vector&v=3.0&callback=initMap1` defer async)
-            meta(http-equiv="Content-Security-Policy" content="default-src 'self';script-src 'self' https://apis.mappls.com; connect-src 'self' ws://localhost:* https://apis.mappls.com https://www.apis.mappls.com https://www.mappls.com https://mt5.mapmyindia.com https://mt4.mapmyindia.com https://mt3.mapmyindia.com https://mt2.mapmyindia.com https://mt1.mapmyindia.com https://apis.mapmyindia.com; style-src 'self' 'unsafe-inline' fonts.googleapis.com; img-src 'self' https://apis.mappls.com https://apis.mapmyindia.com https://cdn.mapmyindia.com data:; worker-src 'self' blob:; font-src 'self' fonts.gstatic.com;")
+            //- script(src="https://sdk.cashfree.com/js/v3/cashfree.js")
+            meta(http-equiv="Content-Security-Policy" content="default-src 'self';script-src 'self' https://apis.mappls.com https://sdk.cashfree.com; connect-src 'self' ws://localhost:* https://apis.mappls.com https://www.apis.mappls.com https://www.mappls.com https://mt5.mapmyindia.com https://mt4.mapmyindia.com https://mt3.mapmyindia.com https://mt2.mapmyindia.com https://mt1.mapmyindia.com https://apis.mapmyindia.com https://sandbox.cashfree.com https://api.cashfree.com;style-src 'self' 'unsafe-inline' fonts.googleapis.com; img-src 'self' https://apis.mappls.com https://apis.mapmyindia.com https://cdn.mapmyindia.com data:; worker-src 'self' blob:; font-src 'self' fonts.gstatic.com; frame-src https://sdk.cashfree.com https://api.cashfree.com https://sandbox.cashfree.com https://payments.cashfree.com https://payments-test.cashfree.com; ")
+
             meta(name='viewport' content='width=device-width, initial-scale=1.0')
             link(href='https://fonts.googleapis.com/css?family=Lato:300,300i,700' rel='stylesheet')
             link(rel='stylesheet' href='/css/style.css')
